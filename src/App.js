@@ -1,13 +1,18 @@
+import React from "react";
+import { BrowserRouter } from 'react-router-dom';
+import NavigationPanel from "./components/NavigationPanel";
+import AppRouter from "./components/AppRouter";
 
 function App() {
   return (
     <div className="App">
-      <div className="container">
-        <h1>
-          React App created
-        </h1>
 
-      </div>
+      <BrowserRouter>
+        <NavigationPanel />
+        <AppRouter />
+      </BrowserRouter>
+
+
     </div>
   );
 }
